@@ -1,0 +1,14 @@
+message: This is a message defined in the configuration file config.yaml.
+messageRepetitions: 3
+database:
+   driverClass: com.mysql.jdbc.Driver
+   user: root
+   password: root
+   url: jdbc:mysql://localhost:3306/mydb
+server:
+  applicationConnectors:
+  - type: http 
+    port: 9000
+  adminConnectors:
+  - type: http
+    port: 9001
